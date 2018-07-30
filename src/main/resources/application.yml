@@ -5,7 +5,7 @@ zuul:
       path: /actions/**
       serviceId: user
     greeting:
-      path: /actions/**
+      path: /greetingActions/**
       serviceId: greeting
     eureka:
       path: /dashboard/**
