@@ -1,0 +1,16 @@
+zuul:
+  ignored-services: '*'
+  routes:
+    user:
+      path: /actions/**
+      serviceId: user
+    greeting:
+      path: /actions/**
+      serviceId: greeting
+    eureka:
+      path: /dashboard/**
+      url: http://localhost:8761/
+  prefix: /chathu
+  sensitive-headers: Cookie,Set-Cookiels
+
+
